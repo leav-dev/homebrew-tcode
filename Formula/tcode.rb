@@ -5,21 +5,21 @@
 class Tcode < Formula
   desc "A fast terminal text editor written in Go"
   homepage "https://github.com/leav-dev/tcode"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/leav-dev/tcode/releases/download/v1.0.0/tcode_darwin_amd64.tar.gz"
-      sha256 "6f8a75e704dc63988550feb94d8248c644a46d0fa9b71ea5334337d684cccf0e"
+      url "https://github.com/leav-dev/tcode/releases/download/v1.0.1/tcode_darwin_amd64.tar.gz"
+      sha256 "247d4f67a257ab59ccd4d8a2ddcdd8bfe482eef8bb2dd8e95ffb5e0d5693be0c"
 
       define_method(:install) do
         bin.install "tcode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/leav-dev/tcode/releases/download/v1.0.0/tcode_darwin_arm64.tar.gz"
-      sha256 "0a0300f2e4252b786c18e8043d556f63061a64cedcdbc45c211960c3c7d2be68"
+      url "https://github.com/leav-dev/tcode/releases/download/v1.0.1/tcode_darwin_arm64.tar.gz"
+      sha256 "6d0d577e1d0b83e5b84e5a7eb8ef0be406d8d001d345ae3db3e5211c55be15b3"
 
       define_method(:install) do
         bin.install "tcode"
@@ -29,15 +29,15 @@ class Tcode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leav-dev/tcode/releases/download/v1.0.0/tcode_linux_amd64.tar.gz"
-      sha256 "9973b314fa6a02d30294d163b83588f70b3134bbd6be13f0041b8bdd3625fd4a"
+      url "https://github.com/leav-dev/tcode/releases/download/v1.0.1/tcode_linux_amd64.tar.gz"
+      sha256 "307d3cf5c0131d7d4298e79fbfa09c688cf008f201fd6887d8b49863ce9758cf"
       define_method(:install) do
         bin.install "tcode"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leav-dev/tcode/releases/download/v1.0.0/tcode_linux_arm64.tar.gz"
-      sha256 "9a6d80866d047950f3e6531a07979acf6a8bbe0ef3527cd6ab5962fbeccb4875"
+      url "https://github.com/leav-dev/tcode/releases/download/v1.0.1/tcode_linux_arm64.tar.gz"
+      sha256 "d516cd131e0fac7d367126596ac22e6bcfbaeec7330e389e1257c64e19b7d416"
       define_method(:install) do
         bin.install "tcode"
       end
